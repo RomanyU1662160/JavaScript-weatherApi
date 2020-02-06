@@ -1,0 +1,9 @@
+
+.container{
+}
+@media all and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+  .container{background-color: green;}
+}
