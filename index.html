@@ -24,11 +24,12 @@
             type="text"
             class="form-control"
             placeholder="Type city name (eg.london)"
+            id="searchInput"
             autofocus
           />
         </div>
       </div>
-
+      <div class="results col-md-6 offset-md-3" id="results"></div>
       <a href="#" class="btn btn-outline-info" id="cityTitle"></a>
       <div class="wrapper">
         <div class="leftSide" id="info">
@@ -109,6 +110,7 @@
     </div>
 
     <script src="./js/app.js" type="module"></script>
+    <script src="./js/functions/filterSearch.js" type="module"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

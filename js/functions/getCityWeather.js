@@ -8,7 +8,7 @@ export const getCityWeather = city => {
     let cityToUpper = city[0].toUpperCase() + city.slice(1);
     cityTitle.innerHTML += cityToUpper + "'s  Weather | ";
   });
-  console.log(cities);
+  // console.log(cities);
 
   //await callApi(city);
 };
