@@ -5,7 +5,10 @@ export const callApi = async city => {
 
   const response = await fetch(url);
   const data = await response.json();
+
   const { weather, wind, clouds, sys, name } = data;
+
+  // console.log(filteredWeather);
   displayWeather(weather, name);
-  console.log(data);
+  // console.log(data);
 };
