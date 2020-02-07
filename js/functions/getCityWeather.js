@@ -1,4 +1,4 @@
-// import { callApi } from "./callApi";
+import { callApi } from "./callApi.js";
 
 export const getCityWeather = city => {
   let cityTitle = document.querySelector("#cityTitle");
@@ -11,4 +11,13 @@ export const getCityWeather = city => {
   // console.log(cities);
 
   //await callApi(city);
+};
+
+function* getWeatherOf(city = "london") {
+  const api = yield callApi(city);
+  const weather = yield getCityWeather(city);
+}
+
+export const displayWeatherOf = city => {
+  return getWeatherOf(city).next();
 };

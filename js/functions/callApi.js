@@ -7,5 +7,5 @@ export const callApi = async city => {
   const data = await response.json();
   const { weather, wind, clouds, sys, name } = data;
   displayWeather(weather, name);
-  // console.log(data);
+  console.log(data);
 };
